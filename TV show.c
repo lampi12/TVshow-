@@ -1,6 +1,6 @@
 #include <stdio.h>
 #define N 10
-//Name: Hyelampa Kolo. This program accepts input from a user and calculates how many minutes an average viewer will watch a show.
+
 //Function initiallization
 int find_minutes(int *minutes, int n);
 
@@ -20,7 +20,7 @@ int main(){
 	}
 	//Function call
 	int result = find_minutes(minutes, n);
-    //Displaying our results
+        //Displaying our results
 	printf("Output: %d\n", result);
 	return 0;
 
@@ -45,7 +45,7 @@ int find_minutes(int *minutes, int n){
         return *p;
 	}else if ((*(p+1) - *p)>7){
         return (*p + 7);
-    }else if (p == (n+minutes)){
+   	}else if (p == (n+minutes)){
         *p = 45;
         return *p;
     }
